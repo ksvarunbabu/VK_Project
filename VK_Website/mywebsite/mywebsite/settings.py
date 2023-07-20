@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # Newly created app "myapp" is added to Installed App. Calling MyappConfig class from 
+    # apps.py under myapp
+    "myapp.apps.MyappConfig",
 ]
 
 MIDDLEWARE = [
