@@ -15,8 +15,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+#include function is used to call the urls from myapp folder
+from django.urls import path, include
+# from django.http import HttpResponse
+
+# #Creating a default home request directing to a Welcome Message
+# def home(request):
+#     return HttpResponse("Welcome to VK HomePage")
+
+# def enter(request):
+#     return HttpResponse("Entering VK Site")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # path('', home), #calling the home function to display default welcome screen. "" inside path function will point to look in the current file for home.
+    # path('enter/', enter), # navigating between pages. This page will be accessed from /enter/ along with the homepage link (homepage link is the django link you click to access the webserver)
+    path('', include('myapp.urls')),
+
 ]
