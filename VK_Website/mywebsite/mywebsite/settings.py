@@ -58,7 +58,9 @@ ROOT_URLCONF = "mywebsite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / 'templates' # points to look for templates newly created. BASEDIR sets the file path back to the Base directory of the project
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
