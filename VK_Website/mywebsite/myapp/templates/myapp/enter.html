@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% comment %} {% include 'navbar.html' %} # include the navbar.html inside home template {% endcomment %}
+<h1> Entering Website </h1>
+{% comment %} {% include 'navbar.html' %}
+{% include 'navbar.html' %}
+{% include 'navbar.html' %} {% endcomment %}
+{% endblock content %}
+
+{% comment %} {% extends 'main.html' %} {% endcomment %}
+
+{% comment %} {% block content %} {% endcomment %}
+{% comment %} {% include 'navbar.html' %} # include the navbar.html inside home template {% endcomment %}
+{% comment %} <h1> Entering Website </h1> {% endcomment %}
+{% comment %} {% include 'navbar.html' %}
+{% include 'navbar.html' %}
+{% include 'navbar.html' %} {% endcomment %}
+{% comment %} {% endblock content %} {% endcomment %}

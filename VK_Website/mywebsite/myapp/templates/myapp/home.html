@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+{% block content %}
+{% comment %} {% include 'navbar.html' %} # include the navbar.html inside home template {% endcomment %}
+<h1> Home Template </h1>
+
+<div>
+  <div>
+    {% for tea in teas %}
+    <div>
+      <h5>{{tea.id}}: {{tea.name}} </h5>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

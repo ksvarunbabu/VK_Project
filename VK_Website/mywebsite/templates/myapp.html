@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <title>Teset</title>
+  <head>
+    <link rel="stylesheet" href="buttons.css">
+    {% comment %} This is a void element since it doesn't need a closing tag </link>. It takes two attributes
+    rel -> Relation that lets us know what we are linking it. in this case it is a stylesheet. 
+    href -> used to reference the file and in this case, it is buttons.css file
+    {% endcomment %}
+    <style>
+      .Para{
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        width: 250px;
+        line-height: 50px;
+      }
+      .dot{
+        font-family: Courier New;
+        margin-bottom: 50px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        {% comment %} text-decoration: underline; {% endcomment %}
+      }
+      .underline{
+        background-color: purple;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="Welcome"> Welcome to my site</button>
+    <button class="Enter"> Click to enter website</button>
+    <p class="Para"> This is my Paragraph with font size </p>
+    <p class="dot"> 3.4M Views &#183; 8 months ago; <strong> I am underlining only this part of text... <strong> <u class="underline">this is for underline</u> </p>
+  </body>
+</html>

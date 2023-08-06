@@ -1,0 +1,68 @@
+button{
+  background-color: Green;
+  color: rgb(25,255,255);
+  border: none;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: opacity 0.15s;
+}
+.Welcome{
+  background-color: red;
+  color: rgb(125,255,20);
+  border: none;
+  height: 50px;
+  width: 120px:
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: opacity 0.8s,
+    color 1s,
+    background-color 2s;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+}
+.Welcome:hover{
+  background-color: green;
+  color: black;
+  border-style: solid;
+  opacity: 0.7;
+  
+}
+.Welcome:active{
+  {% comment %} opacity: 0.7; {% endcomment %}
+  bakcground-color: white;
+  color: black;
+}
+.Enter{
+  background-color: yellow;
+  color: rgb(125,155,200);
+  border: none;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-right: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: opacity 1s;
+  box-shadow: 10px 10px 10px green;
+}
+.Enter:hover{
+  background-color: rgb(25,45,34);
+  color: white;
+  border-style: solid;
+  opacity: 0.7;
+  
+}
+.Enter:active{
+  opacity: 0.7;
+  bakcground-color: red;
+  color: yellow;
+}
