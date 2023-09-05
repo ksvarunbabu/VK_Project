@@ -1,3 +1,7 @@
+/* header h1 a {
+  color: red;
+} */
+
 button{
   background-color: Green;
   color: rgb(25,255,255);
@@ -14,7 +18,7 @@ button{
   color: rgb(125,255,20);
   border: none;
   height: 50px;
-  width: 120px:
+  width: 120px;
   border-radius: 10px;
   cursor: pointer;
   margin-right: 20px;
@@ -34,8 +38,8 @@ button{
   
 }
 .Welcome:active{
-  {% comment %} opacity: 0.7; {% endcomment %}
-  bakcground-color: white;
+  opacity: 0.7;
+  background-color: white;
   color: black;
 }
 .Enter{
