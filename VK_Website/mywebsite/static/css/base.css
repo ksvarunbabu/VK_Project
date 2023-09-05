@@ -67,6 +67,6 @@ button{
 }
 .Enter:active{
   opacity: 0.7;
-  bakcground-color: red;
+  background-color: red;
   color: yellow;
 }
